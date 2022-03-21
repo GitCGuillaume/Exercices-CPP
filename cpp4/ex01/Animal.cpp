@@ -31,7 +31,7 @@ Animal::Animal(const Animal & src)
 Animal & Animal::operator=(Animal const & src)
 {
 	std::cout << "Animal assignation" << std::endl;
-	if (this != &src))
+	if (this != &src)
 		this->type = src.type;
 	return (*this);
 }

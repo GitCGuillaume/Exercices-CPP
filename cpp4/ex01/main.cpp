@@ -32,6 +32,8 @@ void	deep_copy_example(void)
 
 int	main(void)
 {
+	const Animal* a = new Dog();
+	const Animal* b = new Cat();
 	int	i;
 
 	i = 0;
@@ -45,5 +47,7 @@ int	main(void)
 		delete array[i];
 	std::cout << "\033[32m*** DEEP COPY EXAMPLE : ***" << std::endl;
 	deep_copy_example();
+	delete a;//should not create a leak
+	delete b;
 	return (0);
 }
