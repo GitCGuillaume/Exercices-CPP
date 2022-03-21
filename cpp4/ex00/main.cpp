@@ -42,6 +42,9 @@ void	nonConst(void)
 	j->makeSound();
 	cpy.makeSound();
 	meta->makeSound();
+	delete j;
+	delete i;
+	delete meta;
 }
 
 int	main(void)
